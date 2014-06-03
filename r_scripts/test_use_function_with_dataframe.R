@@ -1,0 +1,6 @@
+setwd("~/Documents/integracao_r_ruby/r_scripts")
+library(randomForest)
+load("../model/modelIrisRandomForest.rda")
+dataset <- read.csv("../data/iris_data.csv")
+pred <- predict(model, newdata=dataset)
+#print(pred)
